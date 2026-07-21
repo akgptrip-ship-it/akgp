@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Quote · AKGP Precision Manufacturing</title>
+<meta name="description" content="Request a quote or book a call with AKGP Precision Manufacturing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="mark">GP</span>
+      <span>AKGP<small>PRECISION MFG.</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><path d="M0 1H22" stroke="currentColor" stroke-width="2"/><path d="M0 8H22" stroke="currentColor" stroke-width="2"/><path d="M0 15H22" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="page-header blueprint-bg">
+    <div class="wrap">
+      <div class="tag"><span class="reg-mark"></span> GET A QUOTE</div>
+      <h1>Tell us about the part.</h1>
+      <p>Attach a drawing if you have one — even a rough sketch with dimensions helps. We reply with a quote and any DFM notes within 48 hours.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap" style="display:grid; grid-template-columns: 1.3fr 0.9fr; gap:56px;">
+      <form data-quote-form class="reveal">
+        <div class="form-grid">
+          <div class="field"><label for="name">Name</label><input id="name" type="text" required></div>
+          <div class="field"><label for="company">Company</label><input id="company" type="text"></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" type="tel"></div>
+          <div class="field full"><label for="process">Process needed</label>
+            <select id="process">
+              <option>CNC milling</option>
+              <option>CNC turning</option>
+              <option>Precision grinding</option>
+              <option>Assembly &amp; QC</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <div class="field full"><label for="details">Part details</label><textarea id="details" placeholder="Material, quantity, tolerance, timeline..."></textarea></div>
+        </div>
+        <p class="form-status" style="display:none; margin-top:16px; color: var(--steel-300); font-size:14px;"></p>
+        <button type="submit" class="btn btn-primary" style="margin-top:22px; border:none;">Submit request <span class="btn-arrow">→</span></button>
+      </form>
+      <div class="reveal">
+        <div class="spec-panel">
+          <div class="spec-row"><span>EMAIL</span><span>QUOTES@AKGPMANUF.COM</span></div>
+          <div class="spec-row"><span>PHONE</span><span>+1 (000) 000-0000</span></div>
+          <div class="spec-row"><span>HOURS</span><span>MON–FRI 07:00–18:00</span></div>
+          <div class="spec-row"><span>RESPONSE</span><span>WITHIN 48 HOURS</span></div>
+        </div>
+        <p style="margin-top:20px; color:var(--paper-dim); font-size:14px;">Prefer to talk it through first? Book a 20-minute call with an engineer before sending files.</p>
+        <a href="#" class="btn btn-ghost" style="margin-top:16px;">Book a call <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>AKGP Precision Manufacturing</h4>
+        <p>Contract CNC machining, fabrication, and assembly for teams that can't afford tolerance drift. Prototype through production run.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Get a quote</a></li>
+          <li><a href="contact.html">Book a call</a></li>
+          <li><a href="events.html">Visit the shop floor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:quotes@akgpmanuf.com">quotes@akgpmanuf.com</a></li>
+          <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          <li>Mon–Fri · 07:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AKGP PRECISION MANUFACTURING</span>
+      <span>ISO 9001 STYLE QC · PLACEHOLDER DEMO SITE</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
