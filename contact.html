@@ -43,14 +43,18 @@
 
   <section>
     <div class="wrap" style="display:grid; grid-template-columns: 1.3fr 0.9fr; gap:56px;">
-      <form data-quote-form class="reveal">
+      <form name="quote-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" class="reveal">
+        <input type="hidden" name="form-name" value="quote-request">
+        <p style="display:none">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
         <div class="form-grid">
-          <div class="field"><label for="name">Name</label><input id="name" type="text" required></div>
-          <div class="field"><label for="company">Company</label><input id="company" type="text"></div>
-          <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
-          <div class="field"><label for="phone">Phone</label><input id="phone" type="tel"></div>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="company">Company</label><input id="company" name="company" type="text"></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
           <div class="field full"><label for="process">Process needed</label>
-            <select id="process">
+            <select id="process" name="process">
               <option>CNC milling</option>
               <option>CNC turning</option>
               <option>Precision grinding</option>
@@ -58,15 +62,14 @@
               <option>Not sure</option>
             </select>
           </div>
-          <div class="field full"><label for="details">Part details</label><textarea id="details" placeholder="Material, quantity, tolerance, timeline..."></textarea></div>
+          <div class="field full"><label for="details">Part details</label><textarea id="details" name="details" placeholder="Material, quantity, tolerance, timeline..."></textarea></div>
         </div>
-        <p class="form-status" style="display:none; margin-top:16px; color: var(--steel-300); font-size:14px;"></p>
         <button type="submit" class="btn btn-primary" style="margin-top:22px; border:none;">Submit request <span class="btn-arrow">→</span></button>
       </form>
       <div class="reveal">
         <div class="spec-panel">
-          <div class="spec-row"><span>EMAIL</span><span>QUOTES@AKGPMANUF.COM</span></div>
-          <div class="spec-row"><span>PHONE</span><span>+1 (000) 000-0000</span></div>
+          <div class="spec-row"><span>EMAIL</span><span>QUOTES@AKGPMANUFACTURING.COM</span></div>
+          <div class="spec-row"><span>PHONE</span><span>+1 (555) 013-0199</span></div>
           <div class="spec-row"><span>HOURS</span><span>MON–FRI 07:00–18:00</span></div>
           <div class="spec-row"><span>RESPONSE</span><span>WITHIN 48 HOURS</span></div>
         </div>
@@ -104,8 +107,8 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:quotes@akgpmanuf.com">quotes@akgpmanuf.com</a></li>
-          <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          <li><a href="mailto:quotes@akgpmanufacturing.com">quotes@akgpmanufacturing.com</a></li>
+          <li><a href="tel:+15550130199">+1 (555) 013-0199</a></li>
           <li>Mon–Fri · 07:00–18:00</li>
         </ul>
       </div>
